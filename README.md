@@ -43,6 +43,10 @@ SELECT member.Fname, member.equipe,team.teamName FROM member INNER JOIN team ON 
 
 
 
+ALTER TABLE member
+ADD equipe int(11),
+add FOREIGN KEY (equipe) REFERENCES team(teamID);
+
 
 -ID: int
 -firstname: string
